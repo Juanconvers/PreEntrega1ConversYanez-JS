@@ -23,8 +23,8 @@
 header {
 
     .nav {
-        background: rgb(255, 138, 4);
-        background: linear-gradient(90deg, rgba(255, 138, 4, 1) 0%, rgba(255, 230, 59, 1) 100%);
+        background: rgb(255, 255, 255);
+        background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(77, 77, 77) 100%);
         width: 100%;
         padding: 10px 30px;
         overflow: auto;
@@ -42,12 +42,12 @@ header {
             margin: 15px;
             font-size: 16px;
             font-weight: 700;
-            color: #c57600;
+            color: #000000;
             text-decoration-line: none;
         }
 
         .navigation__link:hover {
-            color: rgb(255, 255, 255);
+            color: rgb(170, 170, 170);
             
         }
         .nav-cart{

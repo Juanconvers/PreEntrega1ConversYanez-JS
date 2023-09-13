@@ -36,7 +36,7 @@ function calcularCuantia (avaluo, porcentaje) {
 alert("Bienvenido(a) - Este servicio le ayudará a saber a cuál tipo de juzgado le corresponde tramitar su proceso de pertenencia en Colombia.");
 
 let respuestaContinuar = prompt("¿Desea realizar un cálculo de competencia judicial? Responda Si / No");
-while (respuestaContinuar.trim().toUpperCase() === "SI") {
+while (respuestaContinuar.toUpperCase() === "SI") {
   alert("Por favor responda las siguientes preguntas:");
  
   avaluo = parseFloat(prompt("¿Cuál es avalúo catastral del inmueble que pretende o el de mayor extensión? Escriba el valor en pesos colombianos. Use números, sin puntos, comas u otros signos")); 
