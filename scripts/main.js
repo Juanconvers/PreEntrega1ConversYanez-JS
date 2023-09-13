@@ -1,4 +1,60 @@
-console.log("Hola Bienvenidos a la clase 2 🦾");
+//Declarar variables
+
+alert("Bienvenido(a) - Este servicio le ayudará a saber a cuál tipo de juzgado le corresponde tramitar su proceso de pertenencia en Colombia.");
+
+alert("Por favor responda las siguientes preguntas:");
+
+let tipoInmueble = prompt("¿El inmueble que pretende en posesión es privado o público (parque, calle, plaza)? Escriba las palabras público o privado según el caso");
+
+if (tipoInmueble.toUpperCase() == "PRIVADO"){
+  let = cobertura = prompt("¿Pretende usted la posesión del 100% de un inmueble independiente o pretende sólo una parte de un inmueble de mayor extensión? Escriba 1 para la primera opción y 2 para la segunda"); 
+  } else if (tipoInmueble.toUpperCase() == "PUBLICO") {
+  alert("No puede demandar por posesión de este inmueble. Prohibido por la ley.")
+  } else {
+      alert("Ingrese un valor válido")
+    }
+
+if (cobertura == 1){
+ let = avaluo1 = parseFloat(prompt("¿Cuál es avalúo catastral del inmueble? Escriba el valor sólo en números - sin puntos, comas u otros signos")); 
+  } else if (cobertura == 2) {
+    let = avaluomayor = parsefloat(prompt("¿Cuál es avalúo catastral del inmueble de mayor extensión? Escriba el valor sólo en números - Sin puntos, comas u otros signos"));
+    let = porcentaje = parseFloat(prompt("¿Cuál es el porcentaje que ocupa el predio que usted pretende en posesión? Escriba un valor del 0 al 100"));
+  
+  } else {
+      alert("Ingrese un valor válido")
+    }
+
+if (avaluo1 <= 46400000){
+  alert("Su proceso se cataloga de Mínima Cuantía - Le corresponde radicar el proceso en un Juzgado Municipal o de Pequeñas Causas"); 
+  } else if (avaluo1 > 46400000 <= 174000000) {
+    alert("Su proceso se cataloga de Menor Cuantía - Le corresponde radicar el proceso en un Juzgado Municipal"); 
+  } else if (avaluo1 > 174000000) {
+    alert("Su proceso se cataloga de Mayor Cuantía - Le corresponde radicar el proceso en un Juazgado del Circuito"); 
+  }else {
+    alert("No se puede procesar la solicitud"); 
+  
+    }
+
+    avaluo2 = (avaluomayor * porcentaje)/100
+
+  if (avaluo2 <= 46400000){
+   alert("Su proceso se cataloga de Mínima Cuantía - Le corresponde radicar el proceso en un Juzgado Municipal o de Pequeñas Causas"); 
+    } else if (avaluo2 > 46400000 <= 174000000) {
+      alert("Su proceso se cataloga de Menor Cuantía - Le corresponde radicar el proceso en un Juzgado Municipal"); 
+    } else {
+      alert("Su proceso se cataloga de Mayor Cuantía - Le corresponde radicar el proceso en un Juazgado del Circuito"); 
+      
+    }
+
+
+
+
+
+
+
+
+
+
 
 // Ejemplo 1: Estructura de un condicional en javascrip
 // condicion --> es una oraciòn o una valoraciòn de la cual puedo decir si es VERDADERA o es FALSA (es un booleano)
@@ -94,15 +150,15 @@ console.log("Hola Bienvenidos a la clase 2 🦾");
 
 //SACADO DE https://francescricart.com/ejercicios-sobre-condicionales-para-nivel-principiante/
 
-var culpable = window.prompt("¿eres culpable?"); // si, no
+// var culpable = window.prompt("¿eres culpable?"); // si, no
 
-	if(culpable=="si"){
-		document.write("irás a la cárcel");
-	}else if(culpable=="no"){
-		document.write("irás a casa");
-	}else{
-		document.write("la documentación por favor");
-	}
+// 	if(culpable=="si"){
+// 		document.write("irás a la cárcel");
+// 	}else if(culpable=="no"){
+// 		document.write("irás a casa");
+// 	}else{
+// 		document.write("la documentación por favor");
+// 	}
 
 
 
